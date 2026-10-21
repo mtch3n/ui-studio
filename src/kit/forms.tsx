@@ -1,5 +1,4 @@
 import type { Config } from '@puckeditor/core'
-import type { ReactNode } from 'react'
 import { Checkbox } from '@/components/ui/checkbox'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -7,6 +6,7 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Switch } from '@/components/ui/switch'
 import { Textarea } from '@/components/ui/textarea'
+import { LabelledField } from './labelled-field'
 
 export type FormProps = {
   Input: { label: string; placeholder: string; type: 'text' | 'email' | 'tel' | 'password' | 'number' }
@@ -27,15 +27,6 @@ const onOff = [
   { label: 'on', value: true },
   { label: 'off', value: false },
 ]
-
-function LabelledField({ id, label, children }: { id: string; label: string; children: ReactNode }) {
-  return (
-    <div className="flex flex-col gap-2">
-      {label && <Label htmlFor={id}>{label}</Label>}
-      {children}
-    </div>
-  )
-}
 
 export const formComponents: Config<FormProps>['components'] = {
   Input: {

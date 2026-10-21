@@ -1,6 +1,6 @@
 {
   "name": "sketch-studio",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Cheap UI sketches as JSON: visual editor (Puck), shadcn kit, per-variant themes, side-by-side board",
   "license": "MIT",
   "repository": {

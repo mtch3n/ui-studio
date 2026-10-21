@@ -2,11 +2,6 @@ import fs from 'node:fs'
 import path from 'node:path'
 import type { Plugin } from 'vite'
 
-// Serves the sketch directory at /sketches/: <screen>/<variant>.json files plus a generated
-// index.json ({ "<screen>": ["<variant>", ...] }). PUT saves a variant (dev only). The build
-// copies the same files into dist, so a static deploy serves the same URLs. Any change in the
-// directory (agent or editor) sends 'sketches:changed' so open boards refresh.
-
 const NAME = /^[\w-]+$/
 
 function readIndex(dir: string): Record<string, string[]> {

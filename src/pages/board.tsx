@@ -3,7 +3,6 @@ import { config, type RootProps } from '@/kit/config'
 import { sketchUrl, useJson, type Index } from '@/sketches'
 import { frameWidth } from './viewports'
 
-// All variants of one screen side by side: one screenshot of this page is the sketch board.
 export function Board({ screen }: { screen: string }) {
   const index = useJson<Index>('/sketches/index.json')
   if (index === undefined) return null

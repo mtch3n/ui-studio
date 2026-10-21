@@ -3,7 +3,6 @@ import { config } from '@/kit/config'
 import { sketchUrl, useJson } from '@/sketches'
 import { frameWidth } from './viewports'
 
-// One variant at a fixed width, for screenshots and links.
 export function View({ screen, variant }: { screen: string; variant: string }) {
   const data = useJson<Data>(sketchUrl(screen, variant))
   if (data === undefined) return null

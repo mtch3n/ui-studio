@@ -1,8 +1,5 @@
 import type { CSSProperties, ReactNode } from 'react'
 
-// Per-variant theme: shadcn CSS variables set on a wrapper, so variants with different
-// themes can sit side by side on one board.
-
 export type Theme = {
   primary: string
   radius: string
@@ -16,8 +13,7 @@ const fonts: Record<Theme['font'], string> = {
   mono: 'ui-monospace, monospace',
 }
 
-// Black or white text, whichever reads better on the primary colour.
-function foregroundFor(hex: string) {
+function readableTextOn(hex: string) {
   const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255)
   return 0.299 * r + 0.587 * g + 0.114 * b > 0.6 ? '#171717' : '#fafafa'
 }
@@ -25,7 +21,7 @@ function foregroundFor(hex: string) {
 export function ThemeFrame({ theme, children }: { theme: Theme; children: ReactNode }) {
   const style = {
     '--primary': theme.primary,
-    '--primary-foreground': foregroundFor(theme.primary),
+    '--primary-foreground': readableTextOn(theme.primary),
     '--ring': theme.primary,
     '--radius': theme.radius,
     fontFamily: fonts[theme.font],

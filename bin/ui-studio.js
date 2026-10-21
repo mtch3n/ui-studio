@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-// ui-studio [dir] [--port <n>]        edit sketches in <dir> (default ./sketches)
-// ui-studio build [dir] [--out <dir>]  static site for sharing (default ./sketch-site)
 import path from 'node:path'
 import { parseArgs } from 'node:util'
 import { build, createServer } from 'vite'

@@ -3,9 +3,6 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { ThemeFrame, type Theme } from './theme'
 
-// The sketch kit: each entry renders one shadcn component and exposes only design-level
-// props (no callbacks, no free classNames), so sketches stay easy to edit and to promote.
-
 type Size = 'none' | 'sm' | 'md' | 'lg'
 
 const gaps: Record<Size, string> = { none: 'gap-0', sm: 'gap-2', md: 'gap-4', lg: 'gap-8' }

@@ -1,6 +1,7 @@
 import { FieldLabel, type Config, type CustomField, type Slot } from '@puckeditor/core'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { formComponents, type FormProps } from './forms'
 import { ThemeFrame, type Theme } from './theme'
 
 type Size = 'none' | 'sm' | 'md' | 'lg'
@@ -32,7 +33,7 @@ type Props = {
     width: 'auto' | 'full'
   }
   Card: { title: string; description: string; items: Slot }
-}
+} & FormProps
 
 export type RootProps = Theme & { title: string; notes: string }
 
@@ -49,6 +50,11 @@ const colorField: CustomField<string> = {
 }
 
 export const config: Config<Props, RootProps> = {
+  categories: {
+    layout: { title: 'Layout', components: ['Stack', 'Row', 'Card'] },
+    content: { title: 'Content', components: ['Text', 'Button'] },
+    forms: { title: 'Forms', components: ['Input', 'Textarea', 'Select', 'Checkbox', 'RadioGroup', 'Switch'] },
+  },
   root: {
     fields: {
       title: { type: 'text', label: 'Variant title' },
@@ -136,5 +142,6 @@ export const config: Config<Props, RootProps> = {
         </Card>
       ),
     },
+    ...formComponents,
   },
 }

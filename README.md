@@ -50,7 +50,7 @@ different colours sit side by side on one board.
 
 ## Kit
 
-Defined in `src/kit/config.tsx`. Each entry renders one shadcn component and has only design-level
+Defined in `src/kit/config.tsx` (layout and content) and `src/kit/forms.tsx` (forms). Each entry renders one shadcn component and has only design-level
 props, no callbacks or free class names.
 
 | Component | Props |
@@ -60,6 +60,12 @@ props, no callbacks or free class names.
 | `Text` | `text`, `style` (title/heading/body/muted/small) |
 | `Button` | `label`, `variant` (default/outline/secondary/ghost/link/destructive), `size` (sm/default/lg), `width` (auto/full) |
 | `Card` | `title`, `description`, `items` (slot) |
+| `Input` | `label`, `placeholder`, `type` (text/email/tel/password/number) |
+| `Textarea` | `label`, `placeholder` |
+| `Select` | `label`, `placeholder`, `options` (comma separated) |
+| `Checkbox` | `label`, `checked` (true/false) |
+| `RadioGroup` | `label`, `options` (comma separated), `selected` |
+| `Switch` | `label`, `checked` (true/false) |
 
 Root (theme): `title`, `notes`, `primary` (hex), `radius` (0rem/0.375rem/0.625rem/1rem), `font`
 (sans/serif/mono), `mode` (light/dark).

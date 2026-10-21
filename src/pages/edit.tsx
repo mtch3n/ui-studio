@@ -1,11 +1,11 @@
-import '@puckeditor/core/puck.css'
+import '@puckeditor/core/no-external.css'
 import { Puck, type Data } from '@puckeditor/core'
 import { config } from '@/kit/config'
 import { saveSketch, sketchUrl, useJson } from '@/sketches'
 import { viewports } from './viewports'
 
 export function Edit({ screen, variant }: { screen: string; variant: string }) {
-  const data = useJson<Data>(sketchUrl(screen, variant))
+  const data = useJson<Data>(sketchUrl(screen, variant), false)
   if (data === undefined) return null
   return (
     <Puck

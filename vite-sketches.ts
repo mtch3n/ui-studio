@@ -4,7 +4,8 @@ import type { Plugin } from 'vite'
 
 // Serves the sketch directory at /sketches/: <screen>/<variant>.json files plus a generated
 // index.json ({ "<screen>": ["<variant>", ...] }). PUT saves a variant (dev only). The build
-// copies the same files into dist, so a static deploy serves the same URLs.
+// copies the same files into dist, so a static deploy serves the same URLs. Any change in the
+// directory (agent or editor) sends 'sketches:changed' so open boards refresh.
 
 const NAME = /^[\w-]+$/
 
@@ -26,6 +27,10 @@ export function sketches(dir: string): Plugin {
   return {
     name: 'ui-studio-sketches',
     configureServer(server) {
+      server.watcher.add(dir)
+      server.watcher.on('all', (_event, file) => {
+        if (file.startsWith(dir + path.sep)) server.ws.send({ type: 'custom', event: 'sketches:changed' })
+      })
       server.middlewares.use('/sketches', (req, res, next) => {
         const url = (req.url ?? '/').split('?')[0]
         if (url === '/index.json') {

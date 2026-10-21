@@ -7,11 +7,18 @@ components, so a chosen sketch is a short step from real code.
 
 ## Use
 
+Run it in your project folder:
+
 ```sh
-pnpm install
-pnpm dev                                   # sketches in ./sketches
-SKETCH_DIR=../my-app/design/sketches pnpm dev   # or a project's own sketch folder
+pnpm dlx github:mtch3n/ui-studio            # edit ./sketches at http://localhost:5173
+pnpm dlx github:mtch3n/ui-studio design/sketches --port 5300
+pnpm dlx github:mtch3n/ui-studio build      # static site in ./sketch-site, to share
 ```
+
+Open `/board/<screen>` next to your agent: when the agent (or anyone) writes a sketch file, the
+board refreshes by itself.
+
+Developing the studio itself: `pnpm install && pnpm dev` (uses `./sketches`).
 
 | Page | What |
 | --- | --- |

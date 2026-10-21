@@ -1,0 +1,34 @@
+{
+  "root": {
+    "props": {
+      "title": "Select",
+      "notes": "",
+      "primary": "#0d9488",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Select",
+            "props": {
+              "id": "Select-2",
+              "label": "Physio",
+              "placeholder": "No preference",
+              "options": "No preference, Dana, Leo"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

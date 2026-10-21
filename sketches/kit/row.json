@@ -1,0 +1,91 @@
+{
+  "root": {
+    "props": {
+      "title": "Row",
+      "notes": "",
+      "primary": "#0d9488",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-2",
+              "text": "Row",
+              "style": "heading"
+            }
+          },
+          {
+            "type": "Row",
+            "props": {
+              "id": "Row-3",
+              "gap": "sm",
+              "justify": "between",
+              "align": "center",
+              "items": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "Text-4",
+                    "text": "Total",
+                    "style": "body"
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "Text-5",
+                    "text": "$120",
+                    "style": "heading"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "Row",
+            "props": {
+              "id": "Row-6",
+              "gap": "sm",
+              "justify": "start",
+              "align": "center",
+              "items": [
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-7",
+                    "label": "Back",
+                    "variant": "outline",
+                    "size": "default",
+                    "width": "auto"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-8",
+                    "label": "Next",
+                    "variant": "default",
+                    "size": "default",
+                    "width": "auto"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

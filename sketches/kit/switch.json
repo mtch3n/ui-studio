@@ -1,0 +1,41 @@
+{
+  "root": {
+    "props": {
+      "title": "Switch",
+      "notes": "",
+      "primary": "#0d9488",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Switch",
+            "props": {
+              "id": "Switch-2",
+              "label": "Remember my details",
+              "checked": true
+            }
+          },
+          {
+            "type": "Switch",
+            "props": {
+              "id": "Switch-3",
+              "label": "Dark mode",
+              "checked": false
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

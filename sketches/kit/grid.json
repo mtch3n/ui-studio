@@ -1,0 +1,95 @@
+{
+  "root": {
+    "props": {
+      "title": "Grid",
+      "notes": "",
+      "primary": "#0d9488",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Grid",
+            "props": {
+              "id": "Grid-1",
+              "cols": "3",
+              "gap": "sm",
+              "items": [
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-1",
+                    "label": "9:00",
+                    "variant": "outline",
+                    "size": "default",
+                    "width": "full"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-2",
+                    "label": "9:30",
+                    "variant": "outline",
+                    "size": "default",
+                    "width": "full"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-3",
+                    "label": "10:00",
+                    "variant": "outline",
+                    "size": "default",
+                    "width": "full"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-4",
+                    "label": "10:30",
+                    "variant": "outline",
+                    "size": "default",
+                    "width": "full"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-5",
+                    "label": "11:00",
+                    "variant": "outline",
+                    "size": "default",
+                    "width": "full"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-6",
+                    "label": "11:30",
+                    "variant": "outline",
+                    "size": "default",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

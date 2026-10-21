@@ -1,0 +1,65 @@
+{
+  "root": {
+    "props": {
+      "title": "Text",
+      "notes": "",
+      "primary": "#0d9488",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-2",
+              "text": "Title",
+              "style": "title"
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-3",
+              "text": "Heading",
+              "style": "heading"
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-4",
+              "text": "Body text for paragraphs.",
+              "style": "body"
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-5",
+              "text": "Muted text for secondary details.",
+              "style": "muted"
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-6",
+              "text": "Small print.",
+              "style": "small"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

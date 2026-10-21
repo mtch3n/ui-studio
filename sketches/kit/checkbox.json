@@ -1,0 +1,41 @@
+{
+  "root": {
+    "props": {
+      "title": "Checkbox",
+      "notes": "",
+      "primary": "#0d9488",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Checkbox",
+            "props": {
+              "id": "Checkbox-2",
+              "label": "I agree to the cancellation policy",
+              "checked": true
+            }
+          },
+          {
+            "type": "Checkbox",
+            "props": {
+              "id": "Checkbox-3",
+              "label": "Send me reminders",
+              "checked": false
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

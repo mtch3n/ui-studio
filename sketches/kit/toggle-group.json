@@ -1,0 +1,28 @@
+{
+  "root": { "props": { "title": "ToggleGroup", "notes": "", "primary": "#0d9488", "radius": "0.625rem", "font": "sans", "mode": "light" } },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          { "type": "Text", "props": { "id": "Text-1", "text": "Pick a day", "style": "heading" } },
+          {
+            "type": "ToggleGroup",
+            "props": {
+              "id": "ToggleGroup-1",
+              "options": "Mon 20, Tue 21, Wed 22, Thu 23, Fri 24",
+              "selected": "Tue 21",
+              "variant": "outline",
+              "size": "default",
+              "width": "full"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

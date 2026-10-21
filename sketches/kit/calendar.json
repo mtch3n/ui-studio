@@ -1,0 +1,4 @@
+{"root":{"props":{"title":"Calendar","notes":"","primary":"#0d9488","radius":"0.625rem","font":"sans","mode":"light"}},
+ "content":[{"type":"Stack","props":{"id":"Stack-1","gap":"md","padding":"lg","align":"stretch","items":[
+  {"type":"Calendar","props":{"id":"Calendar-1","label":"Choose a date","month":"2026-10","selected":"2026-10-21"}}
+ ]}}]}

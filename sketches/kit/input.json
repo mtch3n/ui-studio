@@ -1,0 +1,43 @@
+{
+  "root": {
+    "props": {
+      "title": "Input",
+      "notes": "",
+      "primary": "#0d9488",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Input",
+            "props": {
+              "id": "Input-2",
+              "label": "Email",
+              "placeholder": "name@company.com",
+              "type": "email"
+            }
+          },
+          {
+            "type": "Input",
+            "props": {
+              "id": "Input-3",
+              "label": "Phone",
+              "placeholder": "0400 000 000",
+              "type": "tel"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

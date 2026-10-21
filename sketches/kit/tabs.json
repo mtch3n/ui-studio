@@ -1,0 +1,30 @@
+{
+  "root": { "props": { "title": "Tabs", "notes": "", "primary": "#0d9488", "radius": "0.625rem", "font": "sans", "mode": "light" } },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Tabs",
+            "props": {
+              "id": "Tabs-1",
+              "tabs": "Upcoming, Past",
+              "selected": "Upcoming",
+              "variant": "default",
+              "width": "full",
+              "items": [
+                { "type": "Text", "props": { "id": "Text-1", "text": "Tue 21 Oct · 9:30 · Follow-up with Dana", "style": "body" } },
+                { "type": "Text", "props": { "id": "Text-2", "text": "Thu 23 Oct · 14:00 · First session with Sam", "style": "body" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

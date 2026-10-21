@@ -1,0 +1,33 @@
+{
+  "root": {
+    "props": {
+      "title": "Textarea",
+      "notes": "",
+      "primary": "#0d9488",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Textarea",
+            "props": {
+              "id": "Textarea-2",
+              "label": "Note for the physio",
+              "placeholder": "Anything we should know?"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

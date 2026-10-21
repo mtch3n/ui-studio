@@ -1,0 +1,34 @@
+{
+  "root": { "props": { "title": "Badge", "notes": "", "primary": "#0d9488", "radius": "0.625rem", "font": "sans", "mode": "light" } },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          { "type": "Text", "props": { "id": "Text-1", "text": "Deep tissue massage", "style": "heading" } },
+          {
+            "type": "Row",
+            "props": {
+              "id": "Row-1",
+              "gap": "sm",
+              "justify": "start",
+              "align": "center",
+              "items": [
+                { "type": "Badge", "props": { "id": "Badge-1", "label": "$120", "variant": "default" } },
+                { "type": "Badge", "props": { "id": "Badge-2", "label": "60 min", "variant": "secondary" } },
+                { "type": "Badge", "props": { "id": "Badge-3", "label": "Popular", "variant": "outline" } },
+                { "type": "Badge", "props": { "id": "Badge-4", "label": "Full", "variant": "destructive" } },
+                { "type": "Badge", "props": { "id": "Badge-5", "label": "New", "variant": "ghost" } },
+                { "type": "Badge", "props": { "id": "Badge-6", "label": "Details", "variant": "link" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

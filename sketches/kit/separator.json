@@ -1,0 +1,8 @@
+{"root":{"props":{"title":"Separator","notes":"","primary":"#0d9488","radius":"0.625rem","font":"sans","mode":"light"}},
+ "content":[{"type":"Stack","props":{"id":"Stack-1","gap":"md","padding":"lg","align":"stretch","items":[
+  {"type":"Text","props":{"id":"Text-1","text":"Account settings","style":"heading"}},
+  {"type":"Separator","props":{"id":"Separator-1","label":"","spacing":"sm"}},
+  {"type":"Text","props":{"id":"Text-2","text":"Sign in with your email and password.","style":"muted"}},
+  {"type":"Separator","props":{"id":"Separator-2","label":"or","spacing":"md"}},
+  {"type":"Button","props":{"id":"Button-1","label":"Continue with Google","variant":"outline","size":"default","width":"full"}}
+ ]}}]}

@@ -1,0 +1,106 @@
+{
+  "root": {
+    "props": {
+      "title": "Button",
+      "notes": "",
+      "primary": "#0d9488",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Row",
+            "props": {
+              "id": "Row-2",
+              "gap": "sm",
+              "justify": "start",
+              "align": "center",
+              "items": [
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-3",
+                    "label": "default",
+                    "variant": "default",
+                    "size": "default",
+                    "width": "auto"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-4",
+                    "label": "outline",
+                    "variant": "outline",
+                    "size": "default",
+                    "width": "auto"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-5",
+                    "label": "secondary",
+                    "variant": "secondary",
+                    "size": "default",
+                    "width": "auto"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-6",
+                    "label": "ghost",
+                    "variant": "ghost",
+                    "size": "default",
+                    "width": "auto"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-7",
+                    "label": "link",
+                    "variant": "link",
+                    "size": "default",
+                    "width": "auto"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-8",
+                    "label": "destructive",
+                    "variant": "destructive",
+                    "size": "default",
+                    "width": "auto"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "Button",
+            "props": {
+              "id": "Button-9",
+              "label": "Full width",
+              "variant": "default",
+              "size": "lg",
+              "width": "full"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "root": {
+    "props": {
+      "title": "Card",
+      "notes": "",
+      "primary": "#0d9488",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Card",
+            "props": {
+              "id": "Card-2",
+              "title": "Initial assessment",
+              "description": "Your first visit. We look at the problem and make a plan.",
+              "items": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "Text-3",
+                    "text": "60 min \u00b7 $120",
+                    "style": "muted"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-4",
+                    "label": "Choose",
+                    "variant": "default",
+                    "size": "default",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

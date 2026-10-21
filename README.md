@@ -50,7 +50,7 @@ different colours sit side by side on one board.
 
 ## Kit
 
-Defined in `src/kit/config.tsx` (layout and content) and `src/kit/forms.tsx` (forms). Each entry renders one shadcn component and has only design-level
+One file per block in `src/kit/blocks/`; `/board/kit` shows a sample of each (`sketches/kit/`). Each entry renders one shadcn component and has only design-level
 props, no callbacks or free class names.
 
 | Component | Props |
@@ -66,6 +66,16 @@ props, no callbacks or free class names.
 | `Checkbox` | `label`, `checked` (true/false) |
 | `RadioGroup` | `label`, `options` (comma separated), `selected` |
 | `Switch` | `label`, `checked` (true/false) |
+| `Grid` | `cols` (2/3/4), `gap` (none/sm/md/lg), `items` (slot) |
+| `Separator` | `label` (empty for a plain line, else centred like "or"), `spacing` (none/sm/md/lg) |
+| `Image` | grey placeholder: `label`, `ratio` (16:9/4:3/1:1/3:4), `size` (full/sm/md/lg), `rounded` (true/false) |
+| `Badge` | `label`, `variant` (default/secondary/destructive/outline/ghost/link) |
+| `Avatar` | `name` (initials shown), `size` (sm/md/lg), `caption` (true/false: show the name) |
+| `Item` | list row: `title`, `description`, `variant` (default/outline/muted), `actions` (slot, right side) |
+| `ToggleGroup` | `options` (comma separated), `selected`, `variant` (default/outline), `size` (sm/default/lg), `width` (auto/full) |
+| `Tabs` | `tabs` (comma separated), `selected`, `variant` (default/line), `width` (auto/full), `items` (slot: active tab's content) |
+| `Calendar` | `label`, `month` (YYYY-MM), `selected` (YYYY-MM-DD or empty) |
+| `Alert` | `title`, `description`, `variant` (default/destructive), `icon` (none/info/success/warning/error) |
 
 Root (theme): `title`, `notes`, `primary` (hex), `radius` (0rem/0.375rem/0.625rem/1rem), `font`
 (sans/serif/mono), `mode` (light/dark).

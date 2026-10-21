@@ -16,10 +16,19 @@ Sketch studio: Puck editor + shadcn kit over JSON sketch files. Usage and file f
 
 ## Kit (`src/kit/`)
 
-- Each entry renders one shadcn component and exposes only design-level props (no callbacks, no
-  free class names), so sketches stay easy to edit and `promote` stays one entry → one component.
+- One file per block in `src/kit/blocks/<name>.tsx`, exporting `block: Block = { name, group, config }`
+  with `config: ComponentConfig<Props>`. `config.tsx` collects every file with `import.meta.glob`,
+  so adding a block is adding a file; nothing else is edited. `group` places it in the editor
+  sidebar; the groups and their order are `groups` in `options.ts`.
+- Shared helpers (sizes, lookups, `choices`, `onOff`, `splitOptions`) are in `options.ts`;
+  `labelled-field.tsx` is the label-above-control wrapper used by form blocks.
+- Each block renders one shadcn component and exposes only design-level props (no callbacks, no
+  free class names), so sketches stay easy to edit and `promote` stays one block → one component.
+  Lists are comma-separated strings; booleans are the `onOff` radio. Renders are static (no state):
+  a sketch shows one state, e.g. the selected tab or option is a prop.
 - Tailwind only sees complete class names in source, so props map to classes through lookup
   objects (`gaps`, `aligns`, ...), never template strings.
+- `sketches/kit/<name>.json` is a sample per block; `/board/kit` shows them all.
 - The page root holds the variant's theme and notes. `ThemeFrame` sets shadcn CSS variables on a
   wrapper (not `:root`), so variants with different themes sit side by side on one board.
   `readableTextOn` picks black or white text for the primary colour.

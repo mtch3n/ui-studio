@@ -1,0 +1,80 @@
+{
+  "root": {
+    "props": {
+      "title": "Image",
+      "notes": "",
+      "primary": "#0d9488",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Image",
+            "props": {
+              "id": "Image-1",
+              "label": "Clinic photo",
+              "ratio": "16:9",
+              "rounded": true,
+              "size": "full"
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-1",
+              "text": "Harbour Street Clinic",
+              "style": "heading"
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-2",
+              "text": "Open Monday to Saturday, 8am to 6pm.",
+              "style": "muted"
+            }
+          },
+          {
+            "type": "Row",
+            "props": {
+              "id": "Row-1",
+              "gap": "md",
+              "justify": "start",
+              "align": "center",
+              "items": [
+                {
+                  "type": "Image",
+                  "props": {
+                    "id": "Image-2",
+                    "label": "",
+                    "ratio": "1:1",
+                    "rounded": true,
+                    "size": "sm"
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "Text-3",
+                    "text": "Dr. Lee, general practice",
+                    "style": "body"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

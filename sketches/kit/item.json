@@ -1,0 +1,82 @@
+{
+  "root": {
+    "props": {
+      "title": "Item",
+      "notes": "",
+      "primary": "#0d9488",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Item",
+            "props": {
+              "id": "Item-1",
+              "title": "Initial assessment",
+              "description": "Your first visit · 60 min",
+              "variant": "outline",
+              "actions": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "Text-1",
+                    "text": "$120",
+                    "style": "body"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "Item",
+            "props": {
+              "id": "Item-2",
+              "title": "Follow-up",
+              "description": "30 min",
+              "variant": "outline",
+              "actions": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "Text-2",
+                    "text": "$80",
+                    "style": "body"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "Item",
+            "props": {
+              "id": "Item-3",
+              "title": "Sports massage",
+              "description": "45 min",
+              "variant": "outline",
+              "actions": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "Text-3",
+                    "text": "$95",
+                    "style": "body"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -10,7 +10,7 @@ export function Board({ screen }: { screen: string }) {
   return (
     <main className="flex min-h-screen flex-col gap-6 bg-muted p-10 text-foreground">
       <h1 className="text-2xl font-semibold">{screen}</h1>
-      <div className="flex items-start gap-10">
+      <div className="flex flex-wrap items-start gap-10">
         {variants.map((variant) => (
           <Variant key={variant} screen={screen} variant={variant} />
         ))}

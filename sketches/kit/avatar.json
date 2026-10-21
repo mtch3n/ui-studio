@@ -1,0 +1,31 @@
+{
+  "root": { "props": { "title": "Avatar", "notes": "", "primary": "#0d9488", "radius": "0.625rem", "font": "sans", "mode": "light" } },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-1",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          { "type": "Text", "props": { "id": "Text-1", "text": "Choose your physio", "style": "heading" } },
+          {
+            "type": "Row",
+            "props": {
+              "id": "Row-1",
+              "gap": "md",
+              "justify": "start",
+              "align": "center",
+              "items": [
+                { "type": "Avatar", "props": { "id": "Avatar-1", "name": "Dana Lee", "size": "md", "caption": true } },
+                { "type": "Avatar", "props": { "id": "Avatar-2", "name": "Leo Park", "size": "md", "caption": true } },
+                { "type": "Avatar", "props": { "id": "Avatar-3", "name": "Any physio", "size": "sm", "caption": false } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

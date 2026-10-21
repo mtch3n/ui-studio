@@ -31,10 +31,10 @@ Routes: `/`, `/board/<screen>`, `/edit/<screen>/<variant>`, `/view/<screen>/<var
 screenshot of it is the sketch board. `?w=<px>` sets the frame width for `/board` and `/view`
 (default 390, phone).
 
-## Running as a package (`bin/ui-studio.js`, `vite.config.ts`)
+## Running as a package (`bin/sketch-studio.js`, `vite.config.ts`)
 
-- `ui-studio [dir] [--port]` starts Vite with this package as root and `SKETCH_DIR` = `dir`
-  (default `./sketches`); `ui-studio build [dir] [--out]` writes a static site.
+- `sketch-studio [dir] [--port]` starts Vite with this package as root and `SKETCH_DIR` = `dir`
+  (default `./sketches`); `sketch-studio build [dir] [--out]` writes a static site.
 - `vite` and `@vitejs/plugin-react` are runtime dependencies because the CLI runs Vite.
 - Installed through `pnpm dlx`, dependencies live in pnpm's global store, outside any project
   root, and Vite refuses to serve their files (fonts). `server.fs.allow` lists each dependency's

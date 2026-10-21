@@ -1,5 +1,5 @@
 {
-  "name": "ui-studio",
+  "name": "sketch-studio",
   "version": "0.1.0",
   "description": "Cheap UI sketches as JSON: visual editor (Puck), shadcn kit, per-variant themes, side-by-side board",
   "license": "MIT",
@@ -9,7 +9,7 @@
   },
   "type": "module",
   "bin": {
-    "ui-studio": "bin/ui-studio.js"
+    "sketch-studio": "bin/sketch-studio.js"
   },
   "files": [
     "bin",

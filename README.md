@@ -1,4 +1,4 @@
-# ui-studio
+# ui-studio (npm: `sketch-studio`)
 
 A small sketch studio for UI screens: cheap trial and error on layout and colours before any real
 code is written. Sketches are JSON files, so an agent can write variants in seconds and you can edit
@@ -10,9 +10,9 @@ components, so a chosen sketch is a short step from real code.
 Run it in your project folder:
 
 ```sh
-pnpm dlx ui-studio            # edit ./sketches at http://localhost:5173
-pnpm dlx ui-studio design/sketches --port 5300
-pnpm dlx ui-studio build      # static site in ./sketch-site, to share
+pnpm dlx sketch-studio            # edit ./sketches at http://localhost:5173
+pnpm dlx sketch-studio design/sketches --port 5300
+pnpm dlx sketch-studio build      # static site in ./sketch-site, to share
 ```
 
 Open `/board/<screen>` next to your agent: when the agent (or anyone) writes a sketch file, the

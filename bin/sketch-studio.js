@@ -19,6 +19,6 @@ if (isBuild) {
 } else {
   const server = await createServer({ root, server: { port: values.port ? Number(values.port) : 5173 } })
   await server.listen()
-  console.log(`ui-studio: sketches in ${process.env.SKETCH_DIR}`)
+  console.log(`sketch-studio: sketches in ${process.env.SKETCH_DIR}`)
   server.printUrls()
 }

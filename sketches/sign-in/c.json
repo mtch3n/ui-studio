@@ -1,0 +1,111 @@
+{
+  "root": {
+    "props": {
+      "title": "Dark, compact",
+      "notes": "Feels like a tool, not a marketing page.",
+      "primary": "#f59e0b",
+      "radius": "0.375rem",
+      "font": "mono",
+      "mode": "dark"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-25",
+        "gap": "md",
+        "padding": "md",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Row",
+            "props": {
+              "id": "Row-18",
+              "gap": "sm",
+              "justify": "between",
+              "align": "center",
+              "items": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "Text-16",
+                    "text": "acme/console",
+                    "style": "heading"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-17",
+                    "label": "Docs",
+                    "variant": "ghost",
+                    "size": "sm",
+                    "width": "auto"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "Card",
+            "props": {
+              "id": "Card-24",
+              "title": "Sign in",
+              "description": "",
+              "items": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "Text-19",
+                    "text": "Email: name@company.com",
+                    "style": "muted"
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "Text-20",
+                    "text": "Password: \u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022",
+                    "style": "muted"
+                  }
+                },
+                {
+                  "type": "Row",
+                  "props": {
+                    "id": "Row-23",
+                    "gap": "sm",
+                    "justify": "between",
+                    "align": "center",
+                    "items": [
+                      {
+                        "type": "Button",
+                        "props": {
+                          "id": "Button-21",
+                          "label": "Sign in",
+                          "variant": "default",
+                          "size": "default",
+                          "width": "auto"
+                        }
+                      },
+                      {
+                        "type": "Button",
+                        "props": {
+                          "id": "Button-22",
+                          "label": "Forgot password?",
+                          "variant": "link",
+                          "size": "sm",
+                          "width": "auto"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

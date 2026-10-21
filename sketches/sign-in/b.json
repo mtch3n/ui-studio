@@ -1,0 +1,88 @@
+{
+  "root": {
+    "props": {
+      "title": "Plain, big title",
+      "notes": "Magic link only: no passwords to forget.",
+      "primary": "#16a34a",
+      "radius": "1rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-15",
+        "gap": "md",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-8",
+              "text": "Welcome back",
+              "style": "title"
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-9",
+              "text": "We'll email you a link to sign in.",
+              "style": "muted"
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-10",
+              "text": "Email: name@company.com",
+              "style": "muted"
+            }
+          },
+          {
+            "type": "Button",
+            "props": {
+              "id": "Button-11",
+              "label": "Send me a link",
+              "variant": "default",
+              "size": "lg",
+              "width": "full"
+            }
+          },
+          {
+            "type": "Row",
+            "props": {
+              "id": "Row-14",
+              "gap": "sm",
+              "justify": "center",
+              "align": "center",
+              "items": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "Text-12",
+                    "text": "Trouble signing in?",
+                    "style": "small"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-13",
+                    "label": "Get help",
+                    "variant": "link",
+                    "size": "sm",
+                    "width": "auto"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

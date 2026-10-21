@@ -1,0 +1,79 @@
+{
+  "root": {
+    "props": {
+      "title": "Card, email first",
+      "notes": "Do we need social sign-in at all?",
+      "primary": "#2563eb",
+      "radius": "0.625rem",
+      "font": "sans",
+      "mode": "light"
+    }
+  },
+  "content": [
+    {
+      "type": "Stack",
+      "props": {
+        "id": "Stack-7",
+        "gap": "lg",
+        "padding": "lg",
+        "align": "stretch",
+        "items": [
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-1",
+              "text": "Acme",
+              "style": "heading"
+            }
+          },
+          {
+            "type": "Card",
+            "props": {
+              "id": "Card-5",
+              "title": "Sign in",
+              "description": "Use your work email.",
+              "items": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "Text-2",
+                    "text": "Email: name@company.com",
+                    "style": "muted"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-3",
+                    "label": "Continue with email",
+                    "variant": "default",
+                    "size": "default",
+                    "width": "full"
+                  }
+                },
+                {
+                  "type": "Button",
+                  "props": {
+                    "id": "Button-4",
+                    "label": "Continue with Google",
+                    "variant": "outline",
+                    "size": "default",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "id": "Text-6",
+              "text": "No account? Ask your admin for an invite.",
+              "style": "small"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

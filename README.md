@@ -10,9 +10,9 @@ components, so a chosen sketch is a short step from real code.
 Run it in your project folder:
 
 ```sh
-pnpm dlx github:mtch3n/ui-studio            # edit ./sketches at http://localhost:5173
-pnpm dlx github:mtch3n/ui-studio design/sketches --port 5300
-pnpm dlx github:mtch3n/ui-studio build      # static site in ./sketch-site, to share
+pnpm dlx ui-studio            # edit ./sketches at http://localhost:5173
+pnpm dlx ui-studio design/sketches --port 5300
+pnpm dlx ui-studio build      # static site in ./sketch-site, to share
 ```
 
 Open `/board/<screen>` next to your agent: when the agent (or anyone) writes a sketch file, the
